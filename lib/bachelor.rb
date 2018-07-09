@@ -13,7 +13,7 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def get_contestant_name(data, occupation)
-  data.each do |s_num, contestants|
+  data.each do |season, contestants|
     contestants.each do |person|
       if person.values.include?(occupation)
         return person["name"]
